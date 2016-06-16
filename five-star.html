@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.wrap{
+			width: 300px;
+			height: 400px;
+			margin: 100px auto;
+			position: relative;
+		}
+	  .five-star {
+          position: absolute;
+          top: 35%;
+          right: 50%;
+          /*transform: translate(-50%, -50%);*/
+          width: 0;
+          height: 0;
+          display: block;
+          border-left: 3.04px solid transparent;
+          border-right: 3.24px solid transparent;
+          border-bottom: 10px solid #98DBE3;
+          -webkit-filter: drop-shadow(1px .5px 1px #ccc);
+          cursor: pointer;
+          transform: scale(8)
+        }
+        
+        .five-star:before {
+          content: "";
+          position: absolute;
+          top: 8.65px;
+          left: -8.82px;
+          width: 0;
+          height: 0;
+          color: #98DBE3;
+          display: block;
+          border-left: 12.5px solid transparent;
+          border-right: 12.5px solid transparent;
+          border-bottom: 9.08px solid #98DBE3;
+          transform-origin: top center;
+          transform: rotate(36deg)
+        }
+        
+        .five-star:after {
+          content: "";
+          position: absolute;
+          top: 8.65px;
+          left: -15px;
+          width: 0;
+          height: 0;
+          color: #98DBE3;
+          display: block;
+          border-left: 12.5px solid transparent;
+          border-right: 12.5px solid transparent;
+          border-bottom: 9.08px solid #98DBE3;
+          transform-origin: top center;
+          transform: rotate(-36deg)
+        }
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<hgroup class="five-star">
+		</hgroup>
+	</div>
+</body>
+</html>
