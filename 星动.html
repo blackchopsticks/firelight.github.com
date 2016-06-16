@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>星动</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+		background:#23E59B;
+	   }
+	   .star{
+	   		position: absolute;
+          top: 30%;
+          left: 42%;
+          width: 200px;
+          height: 200px;
+          box-shadow: 0 0 2px #ddd;
+          border-radius: 50%;
+          background-image: radial-gradient(#000 12.5px, transparent 12.5px), radial-gradient(#fff 12.5px, transparent 12.5px), radial-gradient(#fff 50px, transparent 50px), radial-gradient(#000 50px, transparent 50px), linear-gradient(90deg, #000 100px, #fff 100px);
+          background-position: center 50px, center -50px, center 50px, center -50px, 0 0;
+        }
+	   .star:hover{
+
+        -webkit-animation:change 1s linear infinite;
+	   } 
+	   @-webkit-keyframes change{
+	   	0%{
+	   		-webkit-transform:rotateZ(0deg);
+	   	}
+	   	50%{
+	   		-webkit-transform:rotateZ(180deg);
+	   	}
+	   	100%{
+	   		-webkit-transform:rotateZ(360deg);
+	   	}
+	   } 
+	</style>
+	
+</head>
+<body>
+	<div class="star"></div>
+</body>
+</html>
