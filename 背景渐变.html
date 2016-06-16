@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.wrap{
+			width: 300px;
+			height: 400px;
+			margin: 100px auto;
+			position: relative;
+		}
+        .colorful-stripe{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 300px;
+          height: 200px;
+          text-align: center;
+          color: #fff;
+          font-size: 200%;
+          border-radius: .5em;
+          background: linear-gradient(limegreen, transparent), linear-gradient(90deg, #87ceeb, transparent), linear-gradient(-90deg, coral, transparent);
+          background-blend-mode: screen
+        }
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<hgroup class="colorful-stripe">
+		</hgroup>
+	</div>
+</body>
+</html>
