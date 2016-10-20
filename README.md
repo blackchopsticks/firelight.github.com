@@ -1,2 +1,2 @@
-# firelight.github.com
+![](http://pic2.jiu3000.com/upload/2014/12/5/13/05027602145692895.jpg_600x375.jpg)
 秦佳奇的园子，欢迎种草
